@@ -39,5 +39,8 @@ describe("LeapYear", function(){
         it("returns true for 2012", function() {
             expect(leapYear.evaluate(2012)).toEqual(true);
         });
+        it("returns false when a year is not divisible by 4", function() {
+            expect(leapYear.evaluate(1750)).toEqual(false);
+        });
     });
 })

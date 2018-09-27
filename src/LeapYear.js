@@ -2,5 +2,9 @@ function LeapYear() {
 }
 
 LeapYear.prototype.evaluate = function(year) {
-    return true;
+    if (year % 400 === 0) {
+        return true;
+    } else {
+        return false;
+    };
 }

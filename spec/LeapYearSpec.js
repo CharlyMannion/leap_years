@@ -16,4 +16,10 @@ describe("LeapYear", function(){
             expect(leapYear.evaluate(2001)).toEqual(false);
         });
     });
+
+    describe("when a year is divisible by 100 but not 400", function() {
+        it("returns false if a year is divisible by 100 but not by 400", function() {
+            expect(leapYear.evaluate(1700)).toEqual(false);
+        });
+    })
 })

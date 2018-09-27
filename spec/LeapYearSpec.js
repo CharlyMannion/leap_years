@@ -22,16 +22,19 @@ describe("LeapYear", function(){
             expect(leapYear.evaluate(1700)).toEqual(false);
         });
         it("returns false when evaluating 1800", function() {
-            expect(leapYear.evaluate(1700)).toEqual(false);
+            expect(leapYear.evaluate(1800)).toEqual(false);
         });
         it("returns false when evaluating 1900", function() {
-            expect(leapYear.evaluate(1700)).toEqual(false);
+            expect(leapYear.evaluate(1900)).toEqual(false);
         });
     });
 
     describe("when a year is divisible by 4 and not by 100", function() {
         it("returns true when a year is divisible by 4 and not by 100", function() {
             expect(leapYear.evaluate(2004)).toEqual(true);
+        });
+        it("returns true for 2008", function() {
+            expect(leapYear.evaluate(2008)).toEqual(true);
         });
     });
 })

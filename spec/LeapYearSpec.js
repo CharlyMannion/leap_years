@@ -27,5 +27,11 @@ describe("LeapYear", function(){
         it("returns false when evaluating 1900", function() {
             expect(leapYear.evaluate(1700)).toEqual(false);
         });
-    })
+    });
+
+    describe("when a year is divisible by 4 and not by 100", function() {
+        it("returns true when a year is divisible by 4 and not by 100", function() {
+            expect(leapYear.evaluate(2004)).toEqual(true);
+        });
+    });
 })

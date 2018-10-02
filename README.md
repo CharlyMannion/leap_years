@@ -19,7 +19,7 @@ true
 leapYear.evaluate(1999)
 false
 ```
-## extension
+## Extension
 
 This programme will also return an array of all the leap years between two given values
 

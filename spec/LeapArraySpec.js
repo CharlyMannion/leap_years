@@ -20,10 +20,14 @@ describe("LeapArray", function() {
         });
     });
 
-    // describe("A function that determines if each year is a leap year", function() {
-    //     it("returns each listed year", function() {
-    //         expect(leapArray.evaluateYears(2000, 2005)).toEqual([true, false, false, false, true, false]);
-    //     });
-    // })
+    describe("A function that determines if each year is a leap year", function() {
+        it("takes listOfYears as an argument", function() {
+            leapArray.createArray(2000, 2005);
+            expect(leapArray.evaluateYears(this.listOfYears)).toEqual([2000, 2001, 2002, 2003, 2004, 2005])
+        })
+        // it("returns each listed year", function() {
+        //     expect(leapArray.evaluateYears(2000, 2005)).toEqual([true, false, false, false, true, false]);
+        // });
+    })
 
 })

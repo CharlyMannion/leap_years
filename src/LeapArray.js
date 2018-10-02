@@ -9,3 +9,7 @@ LeapArray.prototype.createArray = function(startYear, endYear) {
 }
     return this.listOfYears;
 }
+
+LeapArray.prototype.evaluateYears = function() {
+    return this.listOfYears;
+}

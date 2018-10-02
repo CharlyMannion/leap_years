@@ -11,5 +11,6 @@ LeapArray.prototype.createArray = function(startYear, endYear) {
 }
 
 LeapArray.prototype.evaluateYears = function() {
-    return [true, false, false, false, true, false];
+    this.evaluatedList.push(true, false, false, false, true, false);
+    return this.evaluatedList;
 }

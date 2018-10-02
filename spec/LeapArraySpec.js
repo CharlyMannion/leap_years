@@ -7,7 +7,7 @@ describe("LeapArray", function() {
 
     describe("leap array", function() {
         it("has an empty array", function() {
-            expect(leapArray.list).toEqual([]);
+            expect(leapArray.listOfYears).toEqual([]);
         });
     });
 

@@ -11,7 +11,7 @@ A simple tool that will tell you whether a year is a leap year, according to the
 To run the programme in the console (Cmd-Opt-j)
 
 ``
-> leapYear.evaluate(2000)
+leapYear.evaluate(2000)
 < true
 ``
 

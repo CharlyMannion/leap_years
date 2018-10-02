@@ -19,4 +19,18 @@ true
 leapYear.evaluate(1999)
 false
 ```
+## extension
+
+This programme will also return an array of all the leap years between two given values
+
+e.g. when given 2000 and 2005, the programme will return a new array of true or false values
+
+```
+var leapArray = new LeapArray();
+
+leapArray.createArray(2000, 2005)
+[true, false, false, false, true, false]
+```
+
+
 

@@ -11,8 +11,8 @@ describe("LeapArray", function() {
     //     });
     // });
 
-    describe("A function which takes a year as an end date", function() {
-        it("returns the given end date", function() {
+    describe("A function which accepts a startDate and endDate", function() {
+        it("returns the given dates as an Array", function() {
             expect(leapArray.evaluateYears(2000, 2010)).toEqual([2000, 2010]);
         });
     });

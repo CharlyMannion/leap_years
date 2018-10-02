@@ -2,6 +2,13 @@ describe("LeapArray", function() {
     var leapArray;
 
     beforeEach(function() {
-        leapArray = new leapArray();
+        leapArray = new LeapArray();
     });
+
+    describe("A function which takes a year as a start date", function() {
+        it("returns the given start date", function() {
+            expect(leapArray.evaluateYears(2000)).toEqual(2000);
+        });
+    });
+
 })

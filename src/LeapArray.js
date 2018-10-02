@@ -1,11 +1,10 @@
 function LeapArray() {
-
+    this.list = [];
 }
 
 LeapArray.prototype.evaluateYears = function(startYear, endYear) {
-    var list = [];
     for (var i = startYear; i <= endYear; i++) {
-        list.push(i);
+        this.list.push(i);
 }
-    return list;
+    return this.list;
 }

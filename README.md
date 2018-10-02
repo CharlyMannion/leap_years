@@ -10,7 +10,7 @@ A simple tool that will tell you whether a year is a leap year, according to the
 
 To run the programme in the console (Cmd-Opt-j)
 
-``
+```
 var leapYear = new LeapYear();
 
 leapYear.evaluate(2000)
@@ -18,5 +18,5 @@ true
 
 leapYear.evaluate(1999)
 false
-``
+```
 

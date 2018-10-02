@@ -1,8 +1,9 @@
 function LeapArray() {
     this.listOfYears = [];
+    this.evaluatedList = [];
 }
 
-LeapArray.prototype.evaluateYears = function(startYear, endYear) {
+LeapArray.prototype.createArray = function(startYear, endYear) {
     for (var i = startYear; i <= endYear; i++) {
         this.listOfYears.push(i);
 }

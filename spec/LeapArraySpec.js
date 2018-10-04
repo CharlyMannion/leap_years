@@ -25,11 +25,10 @@ describe("LeapArray", function() {
         })
     });
 
-    // describe("private evaluate leap year function", function() {
-    //     it("returns true for 400", function() {
-    //         console.log(leapArray._evaluate(400));
-    //         expect(leapArray.listOfYears).toEqual([true]);
-    //     });
-    // });
+    describe("private evaluate leap year function", function() {
+        it("returns true for 400", function() {
+            expect(leapArray.isLeap(400)).toEqual(true);
+        });
+    });
 
 })

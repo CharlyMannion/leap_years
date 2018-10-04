@@ -11,7 +11,7 @@ LeapArray.prototype.createArray = function(startYear, endYear) {
 
 LeapArray.prototype.evaluate = function(yearsArray) {
     var assessedList = [];
-    yearsArray.forEach(function(assessedYear){
+    yearsArray.forEach(function(assessedYear) {
         if (assessedYear % 4 === 0 && assessedYear % 100 !== 0) {
              assessedList.push(true);
             } else if (assessedYear % 400 === 0) {
@@ -20,6 +20,15 @@ LeapArray.prototype.evaluate = function(yearsArray) {
             assessedList.push(false);
         };
     })
-    console.log(assessedList);
     return assessedList;
+}
+
+LeapArray.prototype.isLeap = function(singleYear) {
+    if (singleYear % 4 === 0 && singleYear % 100 !== 0) {
+        return true;
+       } else if (singleYear % 400 === 0) {
+       return true;
+   } else {
+       return false;
+   };
 }

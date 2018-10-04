@@ -4,23 +4,22 @@ function LeapArray() {
 
 LeapArray.prototype.createArray = function(startYear, endYear) {
     for (var year = startYear; year <= endYear; year++) {
-        if (year % 4 === 0 && year % 100 !== 0) {
-            this.listOfYears.push(true);
-        } else if (year % 400 === 0) {
-            this.listOfYears.push(true);
-        } else {
-            this.listOfYears.push(false);
-        };
-}
+        this.listOfYears.push(year);
+    }
     return this.listOfYears;
 }
 
-// LeapArray.prototype._evaluate = function(year) {
-//     if (year % 4 === 0 && year % 100 !== 0) {
-//         this.listOfYears.push(true);
-//     } else if (year % 400 === 0) {
-//         this.listOfYears.push(true);
-//     } else {
-//         this.listOfYears.push(false);
-//     };
-// }
+LeapArray.prototype.evaluate = function(yearsArray) {
+    var assessedList = [];
+    yearsArray.forEach(function(assessedYear){
+        if (assessedYear % 4 === 0 && assessedYear % 100 !== 0) {
+             assessedList.push(true);
+            } else if (assessedYear % 400 === 0) {
+            assessedList.push(true);
+        } else {
+            assessedList.push(false);
+        };
+    })
+    console.log(assessedList);
+    return assessedList;
+}

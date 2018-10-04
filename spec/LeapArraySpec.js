@@ -5,7 +5,7 @@ describe("LeapArray", function() {
         leapArray = new LeapArray();
     });
 
-    describe("leap array", function() {
+    describe("list of years", function() {
         it("has an empty array of years", function() {
             expect(leapArray.listOfYears).toEqual([]);
         });
@@ -14,7 +14,14 @@ describe("LeapArray", function() {
     describe("A function which returns an array of years", function() {
         it("adds them to the listOfYears", function() {
             leapArray.createArray(2000, 2005);
-            expect(leapArray.listOfYears).toEqual([true, false, false, false, true, false]);
+            expect(leapArray.listOfYears).toEqual([2000, 2001, 2002, 2003, 2004, 2005]);
+        })
+    });
+
+    describe("A function which returns an array of assessed years", function() {
+        it("assesses the list of years and returns a new array of true or false values", function() {
+            var yearsArray = [2000, 2001, 2002, 2003, 2004, 2005];
+            expect(leapArray.evaluate(yearsArray)).toEqual([true, false, false, false, true, false]);
         })
     });
 
@@ -24,12 +31,5 @@ describe("LeapArray", function() {
     //         expect(leapArray.listOfYears).toEqual([true]);
     //     });
     // });
-
-    // describe("A function which evaluates the list of years", function() {
-    //     it("returns an array of true and false values", function() {
-    //         leapArray.createArray(2000, 20005);
-    //         expect(leapArray.listofYears).toEqual([true, false, false, false, true, false]);
-    //     })
-    // })
 
 })

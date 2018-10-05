@@ -25,10 +25,10 @@ describe("LeapArray", function() {
         })
     });
 
-    // describe("private evaluate leap year function", function() {
-    //     it("returns true for 400", function() {
-    //         expect(leapArray.isLeap(400)).toEqual(true);
-    //     });
-    // });
+    describe("private evaluate leap year function", function() {
+        it("returns true for 400", function() {
+            expect(leapArray.isLeap(400)).toEqual(true);
+        });
+    });
 
 })

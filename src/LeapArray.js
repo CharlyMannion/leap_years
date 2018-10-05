@@ -23,12 +23,12 @@ LeapArray.prototype.evaluate = function(yearsArray) {
     return assessedList;
 }
 
-// LeapArray.prototype.isLeap = function(singleYear) {
-//     if (singleYear % 4 === 0 && singleYear % 100 !== 0) {
-//         return true;
-//        } else if (singleYear % 400 === 0) {
-//        return true;
-//    } else {
-//        return false;
-//    };
-// }
+LeapArray.prototype.isLeap = function(singleYear) {
+    if (singleYear % 4 === 0 && singleYear % 100 !== 0) {
+        return true;
+       } else if (singleYear % 400 === 0) {
+       return true;
+   } else {
+       return false;
+   };
+}

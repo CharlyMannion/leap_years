@@ -12,6 +12,8 @@ LeapArray.prototype.createArray = function(startYear, endYear) {
 LeapArray.prototype.evaluate = function(yearsArray) {
     var assessedList = [];
     yearsArray.forEach(function(yearToAssess) {
+        // if (_isLeap(yearToAssess))
+        // assessedList.push(yearToAssess);
         if (yearToAssess % 4 === 0 && yearToAssess % 100 !== 0) {
              assessedList.push(true);
             } else if (yearToAssess % 400 === 0) {
@@ -19,11 +21,11 @@ LeapArray.prototype.evaluate = function(yearsArray) {
         } else {
             assessedList.push(false);
         };
-    })
+    });
     return assessedList;
 }
 
-LeapArray.prototype.isLeap = function(singleYear) {
+LeapArray.prototype._isLeap = function(singleYear) {
     if (singleYear % 4 === 0 && singleYear % 100 !== 0) {
         return true;
        } else if (singleYear % 400 === 0) {
